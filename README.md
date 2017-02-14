@@ -5,7 +5,9 @@ Provides a Rainmeter skin for tracking your Folding@home stats.
 This skin provides a general overview read from your [extremeoverclocking][1] stats page,
 along with a more detailed view of your tasks in progress for all of your clients connected to HFM.
 
+##Thanks to:
 
+[jsmorley][4] for the Number formatting code, found [here][5] (lua script and example for the .ini file).
 
 ## Usage
 
@@ -36,16 +38,16 @@ Plenty of alternatives are possible as long as the file ends up updated in the s
 
 If you want to connect to more clients, there are three main adjustments that you need to do:
 
-1. Line 108, HTML parser for the summary.html page:
+* Line 108, HTML parser for the summary.html page:
 This is the regular expression for the parser, which reads the whole configuration for any client slot:
 ```
 <td width=".*" class=".*">.*<font color=".*">(.*)</font>.*</td>.*<td width=".*" class=".*">(.*)</td>.*<td width=".*" class=".*">.*<a href=".*">(.*)</a>.*</td>.*<td width=".*" class=".*">.*</td>.*<td width=".*" class=".*">(.*)</td>.*<td width=".*" class=".*">(.*)</td>.*<td width=".*" class=".*">(.*)</td>.*<td width=".*" class=".*">.*</td>.*<td width=".*" class=".*">.*</td>.*<td width=".*" class=".*">(.*) \(.*\)</td>.*<td width=".*" class=".*">(.*)</td>.*<td width=".*" class=".*">(.*)</td>.*<td width=".*" class=".*">(.*)</td>.*<td width=".*" class=".*">.*</td>.*<td width=".*" class=".*">.*</td>.*<td width=".*" class=".*">.*</td>
 ```
 so in order to add more clients, paste for each at the end of the line but with a leading `.*`.
 
-2. Line 127 and the block after. There is a comment line marking the number of the client slot. Take a look at it and adjust the next ones accordingly.
+* Line 127 and the block after. There is a comment line marking the number of the client slot. Take a look at it and adjust the next ones accordingly.
 
-3. End of file. It follows the same structure - a comment line indicating the client, and its configuration afterwards.
+* End of file. It follows the same structure - a comment line indicating the client, and its configuration afterwards.
 
 
 
@@ -65,3 +67,5 @@ so in order to add more clients, paste for each at the end of the line but with 
 [1]: http://folding.extremeoverclocking.com/
 [2]: http://www.overclock.net/u/95615/ryahn
 [3]: http://www.overclock.net/u/149764/fragamemnon
+[4]: https://forum.rainmeter.net/memberlist.php?mode=viewprofile&u=85
+[5]: https://forum.rainmeter.net/viewtopic.php?t=16551

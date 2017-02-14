@@ -38,7 +38,8 @@ If you want to connect to more clients, there are three main adjustments that yo
 
 1. Line 108, HTML parser for the summary.html page:
 This is the regular expression for the parser, which reads the whole configuration for any client slot:
-```<td width=".*" class=".*">.*<font color=".*">(.*)</font>.*</td>.*<td width=".*" class=".*">(.*)</td>.*<td width=".*" class=".*">.*<a href=".*">(.*)</a>.*</td>.*<td width=".*" class=".*">.*</td>.*<td width=".*" class=".*">(.*)</td>.*<td width=".*" class=".*">(.*)</td>.*<td width=".*" class=".*">(.*)</td>.*<td width=".*" class=".*">.*</td>.*<td width=".*" class=".*">.*</td>.*<td width=".*" class=".*">(.*) \(.*\)</td>.*<td width=".*" class=".*">(.*)</td>.*<td width=".*" class=".*">(.*)</td>.*<td width=".*" class=".*">(.*)</td>.*<td width=".*" class=".*">.*</td>.*<td width=".*" class=".*">.*</td>.*<td width=".*" class=".*">.*</td>
+```
+<td width=".*" class=".*">.*<font color=".*">(.*)</font>.*</td>.*<td width=".*" class=".*">(.*)</td>.*<td width=".*" class=".*">.*<a href=".*">(.*)</a>.*</td>.*<td width=".*" class=".*">.*</td>.*<td width=".*" class=".*">(.*)</td>.*<td width=".*" class=".*">(.*)</td>.*<td width=".*" class=".*">(.*)</td>.*<td width=".*" class=".*">.*</td>.*<td width=".*" class=".*">.*</td>.*<td width=".*" class=".*">(.*) \(.*\)</td>.*<td width=".*" class=".*">(.*)</td>.*<td width=".*" class=".*">(.*)</td>.*<td width=".*" class=".*">(.*)</td>.*<td width=".*" class=".*">.*</td>.*<td width=".*" class=".*">.*</td>.*<td width=".*" class=".*">.*</td>
 ```
 so in order to add more clients, paste for each at the end of the line but with a leading `.*`.
 

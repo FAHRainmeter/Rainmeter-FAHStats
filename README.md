@@ -57,11 +57,11 @@ so in order to add more clients, paste for each at the end of the line but with 
  
 ## Contributors
 
- * Ryahn[2]
- * fragamemnon[3]
+ * [Ryahn][2]
+ * [fragamemnon][3]
 
 
 
 [1]: http://folding.extremeoverclocking.com/
-[2]: http://www.overclock.net/u/328830/wyllliam
+[2]: http://www.overclock.net/u/95615/ryahn
 [3]: http://www.overclock.net/u/149764/fragamemnon
